@@ -2,10 +2,27 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "sever.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon",
+    "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "express-rate-limit": "^7.2.0",
+    "express-xss-sanitizer": "^1.2.0",
+    "fs": "^0.0.1-security",
+    "fwsp-server-response": "^2.2.6",
+    "helmet": "^7.1.0",
+    "joi": "^17.12.2",
+    "xss": "^1.0.15",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
 }
